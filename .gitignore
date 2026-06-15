@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+out/
+npm-debug.log*
+
+# Env / secrets
+.env
+.env.local
+
+# Storage
+storage/
+uploads/
+
+# OS
+.DS_Store
+
+# TypeScript build cache
+tsconfig.tsbuildinfo
+
+# Claude Code local settings
+.claude/
+
+# Unused local fonts (using Google Fonts instead)
+public/National Font Family/

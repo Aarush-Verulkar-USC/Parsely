@@ -1,0 +1,24 @@
+{
+  "file": "sample.pdf",
+  "layoutLabel": "globex",
+  "expected": {
+    "invoiceNumber": "GLBX-5567",
+    "issueDate": "2026-03-01",
+    "dueDate": "2026-03-31",
+    "poNumber": null,
+    "currency": "EUR",
+    "vendor": {
+      "name": "Initech LLC",
+      "address": "7 King St, London EC1A 1BB",
+      "taxId": "GB123456789"
+    },
+    "buyer": {
+      "name": "Soylent Corp",
+      "address": "9 Elm Rd, Dublin D02"
+    },
+    "lineItems": [
+      { "description": "Consulting services", "quantity": 5, "unitPrice": 200.0, "lineTotal": 1000.0 }
+    ],
+    "totals": { "subtotal": 1000.0, "taxAmount": 200.0, "taxRate": 0.2, "total": 1200.0 }
+  }
+}
