@@ -34,22 +34,3 @@ Upload a PDF or image invoice, let an LLM extract the structured fields, then re
    ```
 
 Open [http://localhost:3000](http://localhost:3000).
-
-## Environment variables
-
-| Variable | Description |
-|---|---|
-| `DATABASE_URL` | PostgreSQL connection string |
-| `JWT_SECRET` | Secret for signing auth tokens |
-| `ANTHROPIC_API_KEY` | Anthropic API key (preferred) |
-| `OPENAI_API_KEY` | OpenAI API key (fallback) |
-| `EXTRACTION_PROVIDER` | Force `anthropic`, `openai`, or `mock` |
-| `EXTRACTION_MODEL` | Override the default model |
-
-See `.env.example` for all options.
-
-## Deployment
-
-Vercel + Neon (or any Postgres host) is the easiest path. Set the environment variables in your hosting dashboard and run `npm run db:push` against the production database before the first deploy.
-
-> **Note:** The default storage backend writes files to the local filesystem (`STORAGE_DIR`). Swap `src/lib/storage.ts` for an S3-compatible implementation before deploying to a serverless environment.
